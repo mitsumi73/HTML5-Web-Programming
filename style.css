@@ -1,28 +1,11 @@
 /* */
-
+body, html {
+    margin: 0; /* Loại bỏ các margin mặc định */
+    height: 100%; /* Chiều cao thích nghi */
+    width: 100%; /* Chiều rộng thích nghi */
+}
 
 /* ------------------------------------*/
-.icon-container {
-    top: -150px;
-    width: 363px;
-    height: 983px;
-    position: relative;
-    background: white;
-    border-right: 1px solid #E0E0E0;
-    padding-top: 50px; /* Giả sử bạn muốn biểu tượng bắt đầu 50px từ đầu container */
-    text-align: center; /* Căn giữa các biểu tượng */
-}
-
-.social-icon {
-    width: 40px; /* Kích thước mặc định cho mỗi biểu tượng */
-    height: 40px;
-    margin: 5px; /* Khoảng cách giữa các biểu tượng */
-    display: inline-block; /* Sắp xếp biểu tượng theo dạng hàng ngang */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .facebook-icon {
     background-image: url('facebook-logo.png');
 }
@@ -42,6 +25,7 @@
 .discord-icon {
     background-image: url('discord-logo.png');
 }
+
 /* */
 
 /* ------------------------------------*/
