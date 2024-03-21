@@ -7,23 +7,23 @@ body, html {
 
 /* ------------------------------------*/
 .facebook-icon {
-    background-image: url('facebook-logo.png');
+    background-image: url('image/facebook-logo.pnggo.png');
 }
 
 .instagram-icon {
-    background-image: url('instagram-logo.png');
+    background-image: url('image/instagram-logo.pnggo.png');
 }
 
 .github-icon {
-    background-image: url('github-logo.png');
+    background-image: url('image/github-logo.pnggo.png');
 }
 
 .linkedin-icon {
-    background-image: url('linkedin-logo.png');
+    background-image: url('image/linkedin-logo.pnggo.png');
 }
 
 .discord-icon {
-    background-image: url('discord-logo.png');
+    background-image: url('image/discord-logo.pnggo.png');
 }
 
 /* */
