@@ -4,26 +4,32 @@ body, html {
     height: 100%; /* Chiều cao thích nghi */
     width: 100%; /* Chiều rộng thích nghi */
 }
-
+footer {
+    display: block;
+}
 /* ------------------------------------*/
 .facebook-icon {
+    width: 35px;
+    height: 35px;
     background-image: url('image/facebook-logo.png');
 }
 
 .instagram-icon {
+    width: 35px;
+    height: 35px;
     background-image: url('image/instagram-logo.png');
 }
 
 .github-icon {
+    width: 35px;
+    height: 35px;
     background-image: url('image/github-logo.png');
 }
 
 .linkedin-icon {
+    width: 35px;
+    height: 35px;
     background-image: url('image/linkedin-logo.png');
-}
-
-.discord-icon {
-    background-image: url('image/discord-logo.png');
 }
 
 /* */
