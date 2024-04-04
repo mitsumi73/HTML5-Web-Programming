@@ -161,6 +161,7 @@ p.ref {
 
 #large-header {
 	background-image: url('https://webartdevelopers.com/blog/wp-content/uploads/2018/10/CSS-SVG-Waves-Animation.png');
+}
 
 .main-title {
 	position: absolute;
@@ -189,3 +190,12 @@ p.ref {
 		font-size: 3em;
 	}
 }
+
+#demo-canvas {
+	position: absolute; /* Đặt canvas ở vị trí tuyệt đối */
+	top: 0; /* Vị trí cạnh trên cùng */
+	left: 0; /* Vị trí cạnh trái */
+	width: 100%; /* Độ rộng phủ toàn bộ phần tử cha */
+	height: 100%; /* Độ cao phủ toàn bộ phần tử cha */
+	z-index: -1; /* Đảm bảo canvas nằm dưới các phần tử khác */
+  }
