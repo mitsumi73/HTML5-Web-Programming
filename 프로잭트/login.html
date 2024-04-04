@@ -6,10 +6,19 @@
     <title>BOT</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"/>
-    <link rel="stylesheet" href="login.css"/>
+    <link rel="stylesheet" href="CSS/login.css"/>
+    <link rel="stylesheet" href="CSS/background.css"/>   
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
+    <script src="https://assets.codepen.io/16327/PhysicsPropsPlugin3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/debug@4.3.4/src/browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/supports-color@9.4.0/index.min.js"></script>
 </head>
 <body>
-<div class="main-container">
+    <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+            <div class="main-container">
     <span class="login">로그인</span>
     <div class="text-login">
         <span class="email-input">이 앱에 로그인하기 위해 이메일을 입력하세요!</span>
@@ -26,7 +35,7 @@
             </svg>
             <input placeholder="Enter your Email" class="input" type="text">
         </div>
-
+        
         <div class="flex-column">
             <div class="label-password">비밀번호</div>
             <div class="inputForm">
@@ -61,5 +70,9 @@
         <div class="naver-icon"></div>
     </div>
 </div>
+<script src="json/background.js"></script>
+<script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+<script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+<script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
 </body>
 </html>
