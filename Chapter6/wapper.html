@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Page Layout</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  header {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+  }
+  .content-area {
+    flex: 1;
+    display: flex; /* Enable flex context for the content area */
+  }
+  .left {
+    background-color: #dd99ff;
+    width: 15%;
+    padding: 10px;
+  }
+  .content {
+    background-color: #99ddff;
+    width: 70%;
+    padding: 10px;
+    flex-grow: 1;
+  }
+  .right {
+    background-color: #ff9999;
+    width: 15%;
+    padding: 10px;
+  }
+  footer {
+    background-color: #999999;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <header>Header</header>
+
+  <div class="content-area">
+    <div class="left">Sidebar</div>
+    <div class="content">
+
+    </div>
+    <div class="right">Sidebar</div>
+  </div>
+
+  <footer>Footer của bạn</footer>
+</div>
+
+</body>
+</html>
