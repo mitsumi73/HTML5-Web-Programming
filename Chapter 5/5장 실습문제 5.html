@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>셀렉터</title>
+    <style>
+        body {
+            background: powderblue;
+        }
+
+        h3 {
+            color: green; /* Màu xanh lá cho tiêu đề */
+        }
+
+        #center {
+            text-align: center; /* Căn giữa cho "박인희" */
+        }
+
+        div > strong {
+            color: blue; /* Chữ màu xanh dương */
+            background-color: yellow; /* Nền chữ màu vàng */
+        }
+
+        .indent em {
+            color: green; /* Chữ "길" màu xanh lá */
+        }
+
+        .indent strong {
+            color: red; /* Chữ "꽃" màu đỏ không thay đổi vì được định nghĩa sau */
+        }
+
+        /* Căn chỉnh đầu dòng cho đoạn văn <p> */
+        .indent p {
+            text-indent: 2em; /* Đầu dòng tab */
+        }
+    </style>
+</head>
+<body class="main">
+    <h3>얼굴</h3>
+    <hr>
+    <div id="center"><strong>박인희</strong></div>
+    <div class="indent">
+        <p><em>길</em>을 걷고 산들 무엇하리 <strong>꽃</strong>이 내가 아니듯
+            내가 <strong>꽃</strong>이될 수 없는 지금...</p>
+    </div>
+</body>
+</html>
