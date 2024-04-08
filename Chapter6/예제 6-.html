@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Page Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            right: 5px;
+        }
+
+        header {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .content-area {
+            flex: 1;
+            display: flex;
+        }
+
+        .left {
+            width: 30%;
+            padding: 10px;
+            border: 3px solid green;
+        }
+
+        .content {
+            width: 30%;
+            padding: 10px;
+            flex-grow: 1;
+            border: 3px solid green;
+        }
+
+        .right {
+            width: 40%;
+            padding: 10px;
+            border: 3px solid green;
+
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header><h2>3 갸의 div 활용</h2>
+        <hr>
+    </header>
+
+    <div class="content-area">
+        <div class="left">
+            캔버스에 이미지를 그리기 위해서는 이미지 담을 객체가 먼저 필요하다.
+        </div>
+        <div class="content">
+            Imaga 객체의 src 프로퍼티를 이용하여 비트맵을 로드한다.
+        </div>
+        <div class="right">
+            이미지 로딩이 끝나 그때 비로소 이미지의 너비와 높이가 제대로 알려진다.
+        </div>
+    </div>
+
+    <footer></footer>
+</div>
+
+</body>
+</html>
