@@ -30,7 +30,6 @@ section {
 }
 
 main {
-    background-color: white;
     width: 70%;
     padding: 10px;
     flex-grow: 1;
