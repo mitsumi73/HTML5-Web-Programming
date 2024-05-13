@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>Header</header>
+    <nav id="main-area">
+        <section>Left Sidebar</section>
+        <main>
+            <script>
+                let oddSum = 0;
+                let evenSum = 0;
+                let totalSum = 0;
+
+                for (let i = 0; i <= 100; i++) {
+                    totalSum += i;
+                    if (i % 2 === 0) {
+                        evenSum += i;
+                    } else {
+                        oddSum += i;
+                    }
+                }
+
+                document.write("<h3>결과</h3>");
+                document.writeln(oddSum + "<br>");
+                document.writeln(evenSum + "<br>");
+                document.writeln(totalSum);
+            </script>
+        </main>
+        <aside>Right Sidebar</aside>
+    </nav>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
