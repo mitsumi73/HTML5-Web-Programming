@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+    <script>
+        let date = new Date();
+        let hours = date.getHours();
+        if (hours < 12) {
+            alert('오전입니다.');
+        } else {
+            alert('오후입니다.');
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>Header</header>
+    <nav id="main-area">
+        <section>Left Sidebar</section>
+        <main></main>
+        <aside>Right Sidebar</aside>
+    </nav>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
