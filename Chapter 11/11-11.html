@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1:nth-child(1)').text('<a href="#">text()</a>');
+            $('h1:nth-child(2)').html('<a href="#">html()</a>');
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>Header</header>
+    <nav id="main-area">
+        <section>Left Sidebar</section>
+        <main>
+            <h1>Header - 0</h1>
+            <h1>Header - 1</h1>
+        </main>
+        <aside>Right Sidebar</aside>
+    </nav>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
