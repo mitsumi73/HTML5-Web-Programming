@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Basic</title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'orange'
+            }).on('click',function (){
+                $(this).css('blackground', 'red');
+            }).on('mouseenter', function (){
+                $(this).css('blackground', 'blue');
+            }).on('mouseleave'), function (){
+                $(this).css('blackground', 'orange');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>Header</header>
+    <nav id="main-area">
+        <section>Left Sidebar</section>
+        <main><div id="box"></div></main>
+        <aside>Right Sidebar</aside>
+    </nav>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
