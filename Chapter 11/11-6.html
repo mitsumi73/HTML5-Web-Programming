@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        #box.hover{
+            background-color: blue;
+            border-radius: 50px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#box').hover(function () {
+                $('#box').addClass('hover');
+            }, function () {
+                $('#box').removeClass('hover');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>Header</header>
+    <nav id="main-area">
+        <section>Left Sidebar</section>
+        <main><div id="box"></div></main>
+        <aside>Right Sidebar</aside>
+    </nav>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
