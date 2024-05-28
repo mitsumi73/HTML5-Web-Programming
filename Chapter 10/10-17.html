@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>Header</header>
+    <nav id="main-area">
+        <section>Left Sidebar</section>
+        <main>
+            <button id="button">버튼 - </button>
+            <script>
+                document.getElementById('button').onclick =function (){
+                    this.textContent = this.textContent + '*';
+                };
+            </script>
+        </main>
+        <aside>Right Sidebar</aside>
+    </nav>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
