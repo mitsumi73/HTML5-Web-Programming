@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Basic</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            background-color: teal;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>버튼</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function() {
+            var colors = ['red', 'green', 'blue'];
+            var currentColorIndex = 0;
+            $('div').click(function() {
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                $(this).css('background-color', colors[currentColorIndex]);
+            });
+        });
+    </script>
+</body>
+</html>
