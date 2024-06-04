@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-KO">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Basic</title>
+    <link rel="stylesheet" type="text/css" href="../wrapper.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('.page').slideToggle('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+<button>Toggle Show</button>
+<div class="page">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+</body>
+</html>
